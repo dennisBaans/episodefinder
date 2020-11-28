@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Randome Serien Generator</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body onload="start()">
+        <header>
+            <div class="header-bar">
+                <h1 class="header-title">
+                    Episode Finder
+                </h1>
+            </div>
+
+            
+        </header>
+        <div class="site-wrapper">
+
+            <div class="main-wrapper">
+                <p class="roll-text">
+                    What's your next episode of <span class="serie-title">how&nbsp;I&nbsp;met&nbsp;your&nbsp;mother</span>
+                </p>
+
+                <button class="btn btn-shuffle">Roll It!</button>
+                <div class="rolling" style="display: none;"><img height="150px" src="./img/panda.gif" /></div>
+                <div class="result" style="display: none;"></div>
+
+                <div class="btn-nav" style="display: none;">
+                    <button class="btn btn-accept">OK</button>
+                    <button class="btn btn-reset">Reset</button>
+                </div>
+                
+            </div><!-- main-wrapper -->    
+
+            <div class="bottom-wrapper">
+                <header class="list-box-header">
+                    <h2>Open</h2>
+                    <h2>Done</h2>
+                </header>
+                <div class="list-box-wrapper">
+                    <ul class="list-box list-box-open"></ul>
+                    <ul class="list-box list-box-done"></ul>
+                </div>
+            </div>
+
+            
+        </div>
+    <script  type="module" src="./js/script.js"></script>
+    </body>
+</html>
